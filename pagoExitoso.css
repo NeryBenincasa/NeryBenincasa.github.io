@@ -1,0 +1,99 @@
+/* FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER PROFESIONAL CON LOGO CENTRADO Y DEGRADADO */
+.header {
+    width: 100%;
+    height: 180px;
+
+    /* LOGO (arriba) + DEGRADADO (abajo) */
+    background-image:
+        url('imagenes/logo_transparent.png'),
+        linear-gradient(to bottom, #292928, white);
+
+    /* Cada capa tiene su configuración */
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 50%, 100% 100%; /* LOGO - DEGRADADO */
+
+    border-bottom: 5px solid #d6bb1c;
+    border-top: 5px solid #d6bb1c;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TARJETA DE ÉXITO */
+.exito-card {
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto 130px auto;
+    background: #4f4f4f;
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid #FFD700;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 18px rgba(0,0,0,0.3);
+}
+
+.icono {
+    font-size: 70px;
+    color: #2ecc71;
+    text-shadow: 0 0 12px rgba(46,204,113,0.7);
+}
+
+.exito-card h2 {
+    margin-top: 10px;
+    color: #FFD700;
+}
+
+.btn-volver {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    background: #FFD700;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-volver:hover {
+    transform: scale(1.03);
+    background: #e6c000;
+}
+
+/* BARRA INFERIOR */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1c1c1c;
+    border-top: 3px solid #FFD700;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+.bottom-bar .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bottom-bar span {
+    font-size: 12px;
+    color: white;
+}

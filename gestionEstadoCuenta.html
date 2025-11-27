@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Estado de Cuenta</title>
+    <link rel="stylesheet" href="gestionEstadoCuenta.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+    </header>
+
+    <main class="main">
+
+        <h2 class="titulo">Modificar Estado de Cuenta</h2>
+
+        <!-- BUSCADOR -->
+        <div class="buscador">
+            <input type="text" placeholder="Ingresar DNI del cliente">
+            <button class="btn-buscar">Buscar</button>
+        </div>
+
+        <!-- TARJETA DEL CLIENTE -->
+        <div class="cliente-card">
+            <h3>Juan Pérez</h3>
+            <p><strong>DNI:</strong> 40345211</p>
+            <p><strong>Sede:</strong> Abasto</p>
+            <p class="estado al-dia"><strong>Estado actual:</strong> Al día</p>
+        </div>
+
+        <!-- CAMBIO DE ESTADO -->
+        <div class="cambio-estado">
+            <label for="estado-select">Nuevo estado</label>
+            <select id="estado-select">
+                <option value="al-dia">Al día</option>
+                <option value="vencido">Vencido</option>
+                <option value="bloqueado">Bloqueado</option>
+            </select>
+
+            <button class="btn-guardar">Guardar Cambios</button>
+        </div>
+
+    </main>
+
+    <!-- BARRA INFERIOR -->
+    <nav class="bottom-bar">
+        <a href="inicio.html" class="item">🏠<span>Inicio</span></a>
+        <a href="clases.html" class="item">📅<span>Clases</span></a>
+        <a href="pagos.html" class="item">💳<span>Pagos</span></a>
+        <a href="novedades.html" class="item">🔔<span>Novedades</span></a>
+        <a href="perfilCliente.html" class="item">🙍<span>Perfil</span></a>
+    </nav>
+
+</body>
+</html>

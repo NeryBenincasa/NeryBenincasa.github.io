@@ -1,0 +1,168 @@
+/* FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2f2f2f; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER PROFESIONAL CON LOGO CENTRADO Y DEGRADADO */
+.header {
+    width: 100%;
+    height: 180px;
+
+    /* LOGO (arriba) + DEGRADADO (abajo) */
+    background-image:
+        url('imagenes/logo_transparent.png'),
+        linear-gradient(to bottom, #292928, white);
+
+    /* Cada capa tiene su configuración */
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 50%, 100% 100%; /* LOGO - DEGRADADO */
+
+    border-bottom: 5px solid #d6bb1c;
+    border-top: 5px solid #d6bb1c;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITULO */
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+/* TARJETA DE PERFIL */
+.perfil-card {
+    width: 90%;
+    max-width: 450px;
+    background: #4f4f4f;
+    border: 2px solid #FFD700;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.foto-perfil {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #FFD700;
+}
+
+/* ESTADOS */
+.estado {
+    margin-top: 12px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.al-dia {
+    background: #2ecc71;
+    color: black;
+}
+
+.vencido {
+    background: #ff9f43;
+    color: black;
+}
+
+.bloqueado {
+    background: #e84118;
+    color: white;
+}
+
+/* BOTONES */
+.acciones-perfil {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-perfil {
+    flex: 1;
+    background: #FFD700;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-perfil.cerrar {
+    background: #ff4040;
+    color: white;
+}
+
+/* ACCESOS RÁPIDOS */
+.accesos-rapidos {
+    width: 90%;
+    max-width: 450px;
+    margin: 25px auto 130px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.acceso-btn {
+    display: block;
+    text-decoration: none;
+    background: #4f4f4f;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 15px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.acceso-btn:hover {
+    transform: scale(1.03);
+    background: #333333;
+}
+
+
+/* BARRA INFERIOR */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1c1c1c;
+    border-top: 3px solid #FFD700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+}
+.bottom-bar .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 20px;
+}
+.bottom-bar .item span {
+    margin-top: 4px;
+    font-size: 12px;
+}

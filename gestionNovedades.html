@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Novedades</title>
+    <link rel="stylesheet" href="gestionNovedades.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+    </header>
+
+    <main class="main">
+
+        <h2 class="titulo">Gestión de Novedades</h2>
+
+        <!-- FORMULARIO DE NUEVA NOVEDAD -->
+        <section class="formulario">
+            <h3>Nueva Novedad</h3>
+            <input type="text" placeholder="Título de la novedad">
+            <textarea placeholder="Descripción..."></textarea>
+            <input type="date">
+            <button class="btn-agregar">Agregar</button>
+        </section>
+
+        <!-- LISTA DE NOVEDADES EXISTENTES -->
+        <div class="novedades-lista">
+
+            <div class="novedad-card">
+                <h3>Cierre por mantenimiento</h3>
+                <p><strong>Fecha:</strong> 15/02/2025</p>
+                <p>La sede Abasto permanecerá cerrada por trabajos de mantenimiento.</p>
+
+                <div class="acciones">
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="novedad-card">
+                <h3>Nueva Clase de Crossfit</h3>
+                <p><strong>Profesor:</strong> Mauro Medina</p>
+                <p>Disponible desde 18/02 en Hipódromo.</p>
+
+                <div class="acciones">
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- BARRA INFERIOR -->
+    <nav class="bottom-bar">
+        <a href="inicio.html" class="item">🏠<span>Inicio</span></a>
+        <a href="clases.html" class="item">📅<span>Clases</span></a>
+        <a href="pagos.html" class="item">💳<span>Pagos</span></a>
+        <a href="novedades.html" class="item">🔔<span>Novedades</span></a>
+        <a href="perfilCliente.html" class="item">🙍<span>Perfil</span></a>
+    </nav>
+
+</body>
+</html>
